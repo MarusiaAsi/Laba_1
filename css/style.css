@@ -112,7 +112,8 @@ h2{
 }
 .grid-item{
     background-color: #F7F7F7;
-    padding: 20px;
+    padding: 40px;
+   
 }
 .grid-one{
     grid-area: a;
@@ -158,4 +159,15 @@ h2{
 }
 .grid-photo-item:hover:before{
     background-color: rgba(64, 65, 73, 0);
+}
+.grid-reviews{
+    text-align: left;
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-gap: 20px;
+    color: #999999;
+}
+.grid-reviews h2{
+    color: black;
+    text-align: left;
 }
