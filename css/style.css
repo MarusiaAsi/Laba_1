@@ -83,6 +83,7 @@ h2{
     color: white;
 }
 .box-contact{
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -103,5 +104,58 @@ h2{
     font-size: 24px;
     letter-spacing: 0.02em;
 }
+.grid{
+    text-align: center;
+    display: grid;
+    grid-template-areas: "a b c" "d e f";
+    grid-gap: 20px;
+}
+.grid-item{
+    background-color: #F7F7F7;
+    padding: 20px;
+}
+.grid-one{
+    grid-area: a;
+}
+.grid-two{
+    grid-area: b;
+}
+.grid-three{
+    grid-area: c;
+}
+.grid-four{
+    grid-area: d;
+}
+.grid-five{
+    grid-area: e;
+}
+.grid-six{
+    grid-area: f;
+}
 
+.grid-photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
+}
+.grid-photo img{
+    width: 100%;
+    height: 100%;
+    
+}
+.grid-photo-item{
+    height: 100%;
+    position: relative;
+}
+.grid-photo-item::before{
+    content: '';
+    background-color: rgba(64, 65, 73, 0.5);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.grid-photo-item:hover:before{
+    background-color: rgba(64, 65, 73, 0);
+}
