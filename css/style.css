@@ -44,6 +44,9 @@ h2{
 .stat-item h3{
     font-size: 36px;
     }
+.gray{
+    color: #999999;;
+}
 .stat-item p{
     color: #999999;
     }
@@ -52,6 +55,18 @@ h2{
     justify-content: space-evenly;
     max-width: 1000px;
     margin: -100px auto 0;
+    
+}
+.contacts{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.orange{
+    color: #F7654A;
 }
 .box-party{
     display: flex;
@@ -113,6 +128,7 @@ h2{
 .grid-item{
     background-color: #F7F7F7;
     padding: 40px;
+    text-transform: uppercase;
    
 }
 .grid-one{
